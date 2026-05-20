@@ -35,7 +35,6 @@ export default function LoginPage() {
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', background: 'var(--bg)' }}>
 
-      {/* Demo banner — only shown when on /demo route */}
       {isDemo && (
         <div style={{ background: '#1a3d32', borderBottom: '0.5px solid #2a5a45', padding: '8px 16px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 8 }}>
           <div style={{ fontSize: 13, color: '#4cd4a0' }}>👀 <strong>Demo mode</strong> — sample data, nothing is saved.</div>
@@ -45,6 +44,7 @@ export default function LoginPage() {
 
       <div style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '1rem' }}>
         <div style={{ width: '100%', maxWidth: 400 }}>
+
           <div style={{ textAlign: 'center', marginBottom: 32 }}>
             <div style={{ fontSize: 28, fontWeight: 600, color: 'var(--teal)', marginBottom: 4 }}>SmartCoach</div>
             <div style={{ fontSize: 14, color: 'var(--text2)' }}>
@@ -94,13 +94,13 @@ export default function LoginPage() {
             </div>
           </div>
 
-          {/* Bottom section — shows demo link OR nothing depending on route */}
           {!isDemo && (
             <div onClick={() => navigate('/demo')} style={{ textAlign: 'center', marginTop: 14, padding: '10px 14px', borderRadius: 10, border: '0.5px solid var(--border)', background: 'var(--bg2)', cursor: 'pointer' }}>
               <span style={{ fontSize: 13, color: 'var(--text2)' }}>Just exploring? </span>
               <span style={{ fontSize: 13, color: 'var(--teal)', fontWeight: 500 }}>Try the demo →</span>
             </div>
           )}
+
         </div>
       </div>
     </div>
