@@ -84,7 +84,7 @@ Native app wrapper (Capacitor)
 
 Local development
 # Clone the repo
-git clone https://github.com/yourusername/smartcoach.git
+git clone https://github.com/niloofarjamshidi26/smartcoach.git
 cd smartcoach
 
 # Install dependencies
