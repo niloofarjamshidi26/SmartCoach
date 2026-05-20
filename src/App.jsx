@@ -14,6 +14,7 @@ export default function App() {
     localStorage.setItem('theme', darkMode ? 'dark' : 'light')
   }, [darkMode])
 
+
   if (loading) return (
     <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100vh', background: 'var(--bg)' }}>
       <div style={{ fontSize: 24, color: 'var(--teal)' }}>SmartCoach</div>

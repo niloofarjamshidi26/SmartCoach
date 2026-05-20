@@ -20,7 +20,8 @@ export default function LoginPage() {
         toast({ message: 'Welcome back!' })
       } else {
         await signUp({ email: form.email, password: form.password, name: form.name, role: form.role, trainerId: form.trainerId || undefined })
-        toast({ message: 'Account created! Check your email to confirm.' })
+        toast({ message: 'Account created! Signing you in...' })
+        //Add this for email confirmation after toggle on in the supbase as well: toast({ message: 'Account created! Check your email to confirm.' }) 
       }
     } catch (err) {
       toast({ message: err.message, type: 'error' })
